@@ -7,6 +7,6 @@
   <title>PHP Badwords</title>
 </head>
 <body>
-  
+  <h2>file index</h2>
 </body>
 </html>
