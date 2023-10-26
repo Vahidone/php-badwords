@@ -13,16 +13,19 @@
   <div class="container mt-4">
     <div class="row">
       <div class="col 6">
-      <form action="landing-page-form-get.php" method="GET">
-        <div class="mb-3">
-          <label for="testo" class="form-label">Testo</label>
-          <input type="text" class="form-control" id="testo" name="testo" placeholder="Scrivi un testo" aria-describedby="text">
-         
-        </div>
-        <div class="mb-3">
+      <form action="landing-page-form-get.php" method="POST">
+
+      <div class="mb-3">
           <label for="word" class="form-label">Parola proibita</label>
           <input type="text" class="form-control" name="word" placeholder="Scrivi la parola da censurare" id="word">
         </div>
+        <div class="mb-3">
+          <label for="testo">Testo</label>
+          <textarea class="form-control" placeholder="Inserisci il testo" id="testo" name="testo"></textarea>
+          
+         
+        </div>
+    
       
         <button type="submit" class="btn btn-primary">Invio</button>
       </form>

@@ -1,7 +1,7 @@
 <?php 
 
-$testo = $_GET["testo"];
-$word = isset($_GET["word"]) ? $_GET["word"] : "La parola $word non è presente nel testo";
+$testo = trim($_POST["testo"]);
+$word = isset($_POST["word"]) ? $_POST["word"] : "La parola $word non è presente nel testo";
 
 $str_replace = str_replace($word, '***' , $testo);
 
