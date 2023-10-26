@@ -1,7 +1,7 @@
 <?php 
 
 $testo = $_GET["testo"];
-$word = isset($_GET["word"]) ? $_GET["word"] : "La parola $word non esiste nel testo";
+$word = isset($_GET["word"]) ? $_GET["word"] : "La parola $word non è presente nel testo";
 
 $str_replace = str_replace($word, '***' , $testo);
 
@@ -25,7 +25,7 @@ $str_replace = str_replace($word, '***' , $testo);
      
     <p>Il paragrafo è il seguente: <span class="bg-warning fs-4"><?php echo $testo ?>.</span> </p>
     <h3>Il paragrafo è lungo: <span class="text-success fs-2"><?php echo strlen($testo) ?></span> caratteri.</h3>
-    <p>La parola da censurare è: <span class="fw-bold fs-3 text-danger"><< <?php echo $word ?> >></span></p>
+    <p>La parola da censurare è: <span class="fw-bold fs-3 text-danger"><?php echo $word ?></span></p>
 
     <p>Il paragrafo censurato è il seguente: <span class="bg-danger text-white fs-4"><?php echo $str_replace ?>.</span></p>
     
